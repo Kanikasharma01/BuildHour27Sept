@@ -1,0 +1,584 @@
+=== CHUNK 000 ===
+source_url: https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth
+page_title: HDFC Large Cap Fund - Direct Growth
+heading_path: Scheme identity
+scheme_name: HDFC Large Cap Fund - Direct Growth
+scheme_category: large_cap
+source_type: scheme_page
+chunk_index: 0
+char_start: 98  char_end: 522
+content_hash: ecabfd9bd8e0f11cd176c41d2d5a930b030e4fea
+fetched_at: 2026-09-28T20:18:28+05:30
+tokens: 127
+---
+# HDFC Large Cap Fund - Direct Growth
+## Scheme identity
+Fund name: HDFC Large Cap Fund
+Scheme name: HDFC Large Cap Fund Direct Growth
+Plan type: Direct
+Option type: Growth
+AMC: HDFC
+Fund house: HDFC Mutual Fund
+Category: Large Cap
+Asset class: Equity
+Launch date: 01-Jan-2013
+Allotment date: 2013-01-01
+Fund manager: Prashant Jain
+Registrar and transfer agent: CAMS
+ISIN: INF179K01YV8
+Scheme code: 119018
+Direct plan scheme code: 119018
+Product code: H44T
+Open for investment: Yes
+
+=== CHUNK 001 ===
+source_url: https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth
+page_title: HDFC Large Cap Fund - Direct Growth
+heading_path: Charges and fees
+scheme_name: HDFC Large Cap Fund - Direct Growth
+scheme_category: large_cap
+source_type: scheme_page
+chunk_index: 1
+char_start: 544  char_end: 714
+content_hash: 4d12ed450224f3ab573789b696835133fa737506
+fetched_at: 2026-09-28T20:18:28+05:30
+tokens: 68
+---
+# HDFC Large Cap Fund - Direct Growth
+## Charges and fees
+Expense ratio: 1.03
+Expense ratio as on: 2026-09-24
+Base expense ratio: 0.84
+Exit load: Exit load of 1% if redeemed within 1 year
+Stamp duty: 0.005% (from July 1st, 2020)
+
+=== CHUNK 002 ===
+source_url: https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth
+page_title: HDFC Large Cap Fund - Direct Growth
+heading_path: Investment limits
+scheme_name: HDFC Large Cap Fund - Direct Growth
+scheme_category: large_cap
+source_type: scheme_page
+chunk_index: 2
+char_start: 737  char_end: 994
+content_hash: 41e420194946411684d2c38837454285365e2685
+fetched_at: 2026-09-28T20:18:28+05:30
+tokens: 68
+---
+# HDFC Large Cap Fund - Direct Growth
+## Investment limits
+Minimum lump sum investment: 100
+Minimum SIP investment: 100
+Minimum additional investment: 100
+Minimum withdrawal: 100
+SIP available: Yes
+Lump sum available: Yes
+Purchase multiplier: 1
+Lock-in period: No lock-in period
+STP available: Yes
+SWP available: Yes
+
+=== CHUNK 003 ===
+source_url: https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth
+page_title: HDFC Large Cap Fund - Direct Growth
+heading_path: Risk and benchmark
+scheme_name: HDFC Large Cap Fund - Direct Growth
+scheme_category: large_cap
+source_type: scheme_page
+chunk_index: 3
+char_start: 1018  char_end: 1157
+content_hash: 7a35a4afcc5030f9ea05cc6a01b28f649b3f1faf
+fetched_at: 2026-09-28T20:18:28+05:30
+tokens: 48
+---
+# HDFC Large Cap Fund - Direct Growth
+## Risk and benchmark
+Riskometer: Moderately High
+Benchmark: NIFTY 100 TRI
+Benchmark index: NIFTY 100 Total Return Index
+Portfolio turnover (percent, annual): 18
+
+=== CHUNK 004 ===
+source_url: https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth
+page_title: HDFC Large Cap Fund - Direct Growth
+heading_path: Scheme objective
+scheme_name: HDFC Large Cap Fund - Direct Growth
+scheme_category: large_cap
+source_type: scheme_page
+chunk_index: 4
+char_start: 1179  char_end: 1295
+content_hash: 3adcffa728dd9e7d77fbd29d1c6129dfc42845ee
+fetched_at: 2026-09-28T20:18:28+05:30
+tokens: 34
+---
+# HDFC Large Cap Fund - Direct Growth
+## Scheme objective
+The scheme seeks to provide long-term capital appreciation/income by investing predominantly in Large-Cap companies.
+
+=== CHUNK 000 ===
+source_url: https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth
+page_title: HDFC Equity (Flexi Cap) Fund - Direct Growth
+heading_path: Scheme identity
+scheme_name: HDFC Equity (Flexi Cap) Fund - Direct Growth
+scheme_category: flexi_cap
+source_type: scheme_page
+chunk_index: 0
+char_start: 107  char_end: 545
+content_hash: 85f6075942844f338bc5eb1c728633188e90db71
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 137
+---
+# HDFC Equity (Flexi Cap) Fund - Direct Growth
+## Scheme identity
+Fund name: HDFC Flexi Cap Direct Plan-Growth
+Scheme name: HDFC Flexi Cap Direct Plan Growth
+Plan type: Direct
+Option type: Growth
+AMC: HDFC
+Fund house: HDFC Mutual Fund
+Category: Flexi Cap
+Asset class: Equity
+Launch date: 01-Jan-2013
+Allotment date: 2013-01-01
+Fund manager: Prashant Jain
+Registrar and transfer agent: CAMS
+ISIN: INF179K01UT0
+Scheme code: 118955
+Direct plan scheme code: 118955
+Product code: H02T
+Open for investment: Yes
+
+=== CHUNK 001 ===
+source_url: https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth
+page_title: HDFC Equity (Flexi Cap) Fund - Direct Growth
+heading_path: Charges and fees
+scheme_name: HDFC Equity (Flexi Cap) Fund - Direct Growth
+scheme_category: flexi_cap
+source_type: scheme_page
+chunk_index: 1
+char_start: 567  char_end: 737
+content_hash: 8e476eba116f0de11ee9572c4be15a62d46f5da1
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 72
+---
+# HDFC Equity (Flexi Cap) Fund - Direct Growth
+## Charges and fees
+Expense ratio: 0.77
+Expense ratio as on: 2026-09-24
+Base expense ratio: 0.57
+Exit load: Exit load of 1% if redeemed within 1 year
+Stamp duty: 0.005% (from July 1st, 2020)
+
+=== CHUNK 002 ===
+source_url: https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth
+page_title: HDFC Equity (Flexi Cap) Fund - Direct Growth
+heading_path: Investment limits
+scheme_name: HDFC Equity (Flexi Cap) Fund - Direct Growth
+scheme_category: flexi_cap
+source_type: scheme_page
+chunk_index: 2
+char_start: 760  char_end: 1015
+content_hash: cef1551668fa26a0adf015ce4cadeed005942d6a
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 72
+---
+# HDFC Equity (Flexi Cap) Fund - Direct Growth
+## Investment limits
+Minimum lump sum investment: 100
+Minimum SIP investment: 100
+Minimum additional investment: 100
+Minimum withdrawal: 100
+SIP available: Yes
+Lump sum available: Yes
+Purchase multiplier: 1
+Lock-in period: No lock-in period
+STP available: No
+SWP available: No
+
+=== CHUNK 003 ===
+source_url: https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth
+page_title: HDFC Equity (Flexi Cap) Fund - Direct Growth
+heading_path: Risk and benchmark
+scheme_name: HDFC Equity (Flexi Cap) Fund - Direct Growth
+scheme_category: flexi_cap
+source_type: scheme_page
+chunk_index: 3
+char_start: 1039  char_end: 1178
+content_hash: 94d0984e98ca5154522620dbb6aacf7fb7cafd5a
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 52
+---
+# HDFC Equity (Flexi Cap) Fund - Direct Growth
+## Risk and benchmark
+Riskometer: Moderately High
+Benchmark: NIFTY 500 TRI
+Benchmark index: NIFTY 500 Total Return Index
+Portfolio turnover (percent, annual): 29
+
+=== CHUNK 004 ===
+source_url: https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth
+page_title: HDFC Equity (Flexi Cap) Fund - Direct Growth
+heading_path: Scheme objective
+scheme_name: HDFC Equity (Flexi Cap) Fund - Direct Growth
+scheme_category: flexi_cap
+source_type: scheme_page
+chunk_index: 4
+char_start: 1200  char_end: 1339
+content_hash: 307248ed59d3746a5ab23a16d3f9aedd7d278406
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 39
+---
+# HDFC Equity (Flexi Cap) Fund - Direct Growth
+## Scheme objective
+The scheme seeks to generate capital appreciation / income from a portfolio, predominantly invested in equity & equity related instruments.
+
+=== CHUNK 000 ===
+source_url: https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth
+page_title: HDFC ELSS Tax Saver Fund - Direct Growth
+heading_path: Scheme identity
+scheme_name: HDFC ELSS Tax Saver Fund - Direct Growth
+scheme_category: elss
+source_type: scheme_page
+chunk_index: 0
+char_start: 103  char_end: 540
+content_hash: 0777dab6989dd8c322214198ed1e36fa63c7aaef
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 139
+---
+# HDFC ELSS Tax Saver Fund - Direct Growth
+## Scheme identity
+Fund name: HDFC ELSS - Tax Saver Fund
+Scheme name: HDFC ELSS Tax Saver Fund Direct Plan Growth
+Plan type: Direct
+Option type: Growth
+AMC: HDFC
+Fund house: HDFC Mutual Fund
+Category: ELSS
+Asset class: Equity
+Launch date: 01-Jan-2013
+Allotment date: 2013-01-01
+Fund manager: Vinay Kulkarni
+Registrar and transfer agent: CAMS
+ISIN: INF179K01YS4
+Scheme code: 119060
+Direct plan scheme code: 119060
+Product code: H32T
+Open for investment: Yes
+
+=== CHUNK 001 ===
+source_url: https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth
+page_title: HDFC ELSS Tax Saver Fund - Direct Growth
+heading_path: Charges and fees
+scheme_name: HDFC ELSS Tax Saver Fund - Direct Growth
+scheme_category: elss
+source_type: scheme_page
+chunk_index: 1
+char_start: 562  char_end: 694
+content_hash: 638021158151798b800fc9cd010c74c1b95cb82a
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 61
+---
+# HDFC ELSS Tax Saver Fund - Direct Growth
+## Charges and fees
+Expense ratio: 1.21
+Expense ratio as on: 2026-09-24
+Base expense ratio: 0.97
+Exit load: Nil
+Stamp duty: 0.005% (from July 1st, 2020)
+
+=== CHUNK 002 ===
+source_url: https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth
+page_title: HDFC ELSS Tax Saver Fund - Direct Growth
+heading_path: Investment limits
+scheme_name: HDFC ELSS Tax Saver Fund - Direct Growth
+scheme_category: elss
+source_type: scheme_page
+chunk_index: 2
+char_start: 717  char_end: 964
+content_hash: 9f2e8af1422b35bb1b299d049bf40b90ea92b657
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 68
+---
+# HDFC ELSS Tax Saver Fund - Direct Growth
+## Investment limits
+Minimum lump sum investment: 500
+Minimum SIP investment: 500
+Minimum additional investment: 500
+Minimum withdrawal: 500
+SIP available: Yes
+Lump sum available: Yes
+Purchase multiplier: 500
+Lock-in period: 3 years
+STP available: No
+SWP available: No
+
+=== CHUNK 003 ===
+source_url: https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth
+page_title: HDFC ELSS Tax Saver Fund - Direct Growth
+heading_path: Risk and benchmark
+scheme_name: HDFC ELSS Tax Saver Fund - Direct Growth
+scheme_category: elss
+source_type: scheme_page
+chunk_index: 3
+char_start: 988  char_end: 1127
+content_hash: fa244c03551dc4bb6c977dede22d5159825463c1
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 51
+---
+# HDFC ELSS Tax Saver Fund - Direct Growth
+## Risk and benchmark
+Riskometer: Moderately High
+Benchmark: NIFTY 500 TRI
+Benchmark index: NIFTY 500 Total Return Index
+Portfolio turnover (percent, annual): 32
+
+=== CHUNK 004 ===
+source_url: https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth
+page_title: HDFC ELSS Tax Saver Fund - Direct Growth
+heading_path: Scheme objective
+scheme_name: HDFC ELSS Tax Saver Fund - Direct Growth
+scheme_category: elss
+source_type: scheme_page
+chunk_index: 4
+char_start: 1149  char_end: 1290
+content_hash: 1006a40a3cd56ad8c33ca2e63ab271d5468d9bf1
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 38
+---
+# HDFC ELSS Tax Saver Fund - Direct Growth
+## Scheme objective
+The scheme seeks to generate capital appreciation / income from a portfolio, comprising predominantly of equity & equity related instruments.
+
+=== CHUNK 000 ===
+source_url: https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth
+page_title: HDFC Small Cap Fund - Direct Growth
+heading_path: Scheme identity
+scheme_name: HDFC Small Cap Fund - Direct Growth
+scheme_category: small_cap
+source_type: scheme_page
+chunk_index: 0
+char_start: 98  char_end: 526
+content_hash: b898c503efa7d847bb58e4f613e1ba29ca244bae
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 131
+---
+# HDFC Small Cap Fund - Direct Growth
+## Scheme identity
+Fund name: HDFC Small Cap Fund
+Scheme name: HDFC Small Cap Fund Direct Growth
+Plan type: Direct
+Option type: Growth
+AMC: HDFC
+Fund house: HDFC Mutual Fund
+Category: Small Cap
+Asset class: Equity
+Launch date: 01-Jan-2013
+Allotment date: 2013-01-01
+Fund manager: Chirag Setalvad
+Registrar and transfer agent: CAMS
+ISIN: INF179KA1RW5
+Scheme code: 130503
+Direct plan scheme code: 130503
+Product code: HACG1G
+Open for investment: Yes
+
+=== CHUNK 001 ===
+source_url: https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth
+page_title: HDFC Small Cap Fund - Direct Growth
+heading_path: Charges and fees
+scheme_name: HDFC Small Cap Fund - Direct Growth
+scheme_category: small_cap
+source_type: scheme_page
+chunk_index: 1
+char_start: 548  char_end: 718
+content_hash: 996f83c36dc4128be11ddc1cd2323cd44abe4777
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 68
+---
+# HDFC Small Cap Fund - Direct Growth
+## Charges and fees
+Expense ratio: 0.78
+Expense ratio as on: 2026-09-24
+Base expense ratio: 0.63
+Exit load: Exit load of 1% if redeemed within 1 year
+Stamp duty: 0.005% (from July 1st, 2020)
+
+=== CHUNK 002 ===
+source_url: https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth
+page_title: HDFC Small Cap Fund - Direct Growth
+heading_path: Investment limits
+scheme_name: HDFC Small Cap Fund - Direct Growth
+scheme_category: small_cap
+source_type: scheme_page
+chunk_index: 2
+char_start: 741  char_end: 998
+content_hash: dbcf48f7390acc57f64257cd17eca7fa2d484c13
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 68
+---
+# HDFC Small Cap Fund - Direct Growth
+## Investment limits
+Minimum lump sum investment: 100
+Minimum SIP investment: 100
+Minimum additional investment: 100
+Minimum withdrawal: 100
+SIP available: Yes
+Lump sum available: Yes
+Purchase multiplier: 1
+Lock-in period: No lock-in period
+STP available: Yes
+SWP available: Yes
+
+=== CHUNK 003 ===
+source_url: https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth
+page_title: HDFC Small Cap Fund - Direct Growth
+heading_path: Risk and benchmark
+scheme_name: HDFC Small Cap Fund - Direct Growth
+scheme_category: small_cap
+source_type: scheme_page
+chunk_index: 3
+char_start: 1022  char_end: 1174
+content_hash: 5a492d18f25a7dff16d4d3dcd7155b978249d56e
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 50
+---
+# HDFC Small Cap Fund - Direct Growth
+## Risk and benchmark
+Riskometer: Moderately High
+Benchmark: BSE 250 SmallCap TRI
+Benchmark index: BSE 250 SmallCap Total Return Index
+Portfolio turnover (percent, annual): 6
+
+=== CHUNK 004 ===
+source_url: https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth
+page_title: HDFC Small Cap Fund - Direct Growth
+heading_path: Scheme objective
+scheme_name: HDFC Small Cap Fund - Direct Growth
+scheme_category: small_cap
+source_type: scheme_page
+chunk_index: 4
+char_start: 1196  char_end: 1313
+content_hash: fe73329016131ea38b7ba420aa5e8a13c416c264
+fetched_at: 2026-09-28T20:18:29+05:30
+tokens: 34
+---
+# HDFC Small Cap Fund - Direct Growth
+## Scheme objective
+The scheme seeks to provide long-term capital appreciation /income by investing predominantly in Small-Cap companies.
+
+=== CHUNK 000 ===
+source_url: https://groww.in/mutual-funds/hdfc-balanced-advantage-fund-direct-growth
+page_title: HDFC Balanced Advantage Fund - Direct Growth
+heading_path: Scheme identity
+scheme_name: HDFC Balanced Advantage Fund - Direct Growth
+scheme_category: balanced_advantage
+source_type: scheme_page
+chunk_index: 0
+char_start: 107  char_end: 571
+content_hash: c6fb9c5d191a305394a903d6381334323db59b4d
+fetched_at: 2026-09-28T20:18:30+05:30
+tokens: 132
+---
+# HDFC Balanced Advantage Fund - Direct Growth
+## Scheme identity
+Fund name: HDFC Balanced Advantage Fund
+Scheme name: HDFC Balanced Advantage Fund Direct Growth
+Plan type: Direct
+Option type: Growth
+AMC: HDFC
+Fund house: HDFC Mutual Fund
+Category: Dynamic Asset Allocation
+Asset class: Hybrid
+Launch date: 01-Jan-2013
+Allotment date: 2013-01-01
+Fund manager: Srinivas Rao Ravuri
+Registrar and transfer agent: CAMS
+ISIN: INF179K01WA6
+Scheme code: 118968
+Direct plan scheme code: 118968
+Product code: HGFGT
+Open for investment: Yes
+
+=== CHUNK 001 ===
+source_url: https://groww.in/mutual-funds/hdfc-balanced-advantage-fund-direct-growth
+page_title: HDFC Balanced Advantage Fund - Direct Growth
+heading_path: Charges and fees
+scheme_name: HDFC Balanced Advantage Fund - Direct Growth
+scheme_category: balanced_advantage
+source_type: scheme_page
+chunk_index: 1
+char_start: 593  char_end: 825
+content_hash: 8c7c238bd63b0f8f002e142ee3caf94d9eabd769
+fetched_at: 2026-09-28T20:18:30+05:30
+tokens: 80
+---
+# HDFC Balanced Advantage Fund - Direct Growth
+## Charges and fees
+Expense ratio: 0.78
+Expense ratio as on: 2026-09-24
+Base expense ratio: 0.64
+Exit load: Exit Load for units in excess of 15% of the investment,1% will be charged for redemption within 1 year.
+Stamp duty: 0.005% (from July 1st, 2020)
+
+=== CHUNK 002 ===
+source_url: https://groww.in/mutual-funds/hdfc-balanced-advantage-fund-direct-growth
+page_title: HDFC Balanced Advantage Fund - Direct Growth
+heading_path: Investment limits
+scheme_name: HDFC Balanced Advantage Fund - Direct Growth
+scheme_category: balanced_advantage
+source_type: scheme_page
+chunk_index: 2
+char_start: 848  char_end: 1103
+content_hash: 9d9bfdc888d605f48c9138daf6ee2fa25a65f73e
+fetched_at: 2026-09-28T20:18:30+05:30
+tokens: 68
+---
+# HDFC Balanced Advantage Fund - Direct Growth
+## Investment limits
+Minimum lump sum investment: 100
+Minimum SIP investment: 100
+Minimum additional investment: 100
+Minimum withdrawal: 100
+SIP available: Yes
+Lump sum available: Yes
+Purchase multiplier: 1
+Lock-in period: No lock-in period
+STP available: No
+SWP available: No
+
+=== CHUNK 003 ===
+source_url: https://groww.in/mutual-funds/hdfc-balanced-advantage-fund-direct-growth
+page_title: HDFC Balanced Advantage Fund - Direct Growth
+heading_path: Risk and benchmark
+scheme_name: HDFC Balanced Advantage Fund - Direct Growth
+scheme_category: balanced_advantage
+source_type: scheme_page
+chunk_index: 3
+char_start: 1127  char_end: 1309
+content_hash: 6c53ed3a137d77ddcbb094de949a65819c8dff46
+fetched_at: 2026-09-28T20:18:30+05:30
+tokens: 58
+---
+# HDFC Balanced Advantage Fund - Direct Growth
+## Risk and benchmark
+Riskometer: Moderately High
+Benchmark: NIFTY 50 Hybrid Composite Debt 50:50 Index
+Benchmark index: NIFTY 50 Hybrid Composite Debt 50:50 Index
+Portfolio turnover (percent, annual): 27
+
+=== CHUNK 004 ===
+source_url: https://groww.in/mutual-funds/hdfc-balanced-advantage-fund-direct-growth
+page_title: HDFC Balanced Advantage Fund - Direct Growth
+heading_path: Scheme objective
+scheme_name: HDFC Balanced Advantage Fund - Direct Growth
+scheme_category: balanced_advantage
+source_type: scheme_page
+chunk_index: 4
+char_start: 1331  char_end: 1449
+content_hash: 379717e73e1a8bdcb006258b29b08aa703df6024
+fetched_at: 2026-09-28T20:18:30+05:30
+tokens: 34
+---
+# HDFC Balanced Advantage Fund - Direct Growth
+## Scheme objective
+The Scheme seeks to provide long term capital appreciation / income from a dynamic mix of equity and debt investments.

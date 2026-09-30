@@ -1,0 +1,35 @@
+# Secrets - the Groq API key must never be committed.
+# Copy .env.example to .env and fill in the real values locally.
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Rebuilt from data/raw/ via `python -m ingest`; vectors are not source.
+chroma_db/
+
+# Streamlit
+.streamlit/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
+
+# NOTE: data/raw/ and data/chunks.txt are intentionally NOT ignored.
+# The fetched public page text and the human-readable chunks are demo
+# artifacts we want committed so the corpus is inspectable and reproducible.

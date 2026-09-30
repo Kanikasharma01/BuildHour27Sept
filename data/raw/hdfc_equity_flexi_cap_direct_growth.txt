@@ -1,0 +1,49 @@
+# fetched_at: 2026-09-28T20:18:29+05:30
+# HDFC Equity (Flexi Cap) Fund - Direct Growth
+
+## Scheme identity
+Fund name: HDFC Flexi Cap Direct Plan-Growth
+Scheme name: HDFC Flexi Cap Direct Plan Growth
+Plan type: Direct
+Option type: Growth
+AMC: HDFC
+Fund house: HDFC Mutual Fund
+Category: Flexi Cap
+Asset class: Equity
+Launch date: 01-Jan-2013
+Allotment date: 2013-01-01
+Fund manager: Prashant Jain
+Registrar and transfer agent: CAMS
+ISIN: INF179K01UT0
+Scheme code: 118955
+Direct plan scheme code: 118955
+Product code: H02T
+Open for investment: Yes
+
+## Charges and fees
+Expense ratio: 0.77
+Expense ratio as on: 2026-09-24
+Base expense ratio: 0.57
+Exit load: Exit load of 1% if redeemed within 1 year
+Stamp duty: 0.005% (from July 1st, 2020)
+
+## Investment limits
+Minimum lump sum investment: 100
+Minimum SIP investment: 100
+Minimum additional investment: 100
+Minimum withdrawal: 100
+SIP available: Yes
+Lump sum available: Yes
+Purchase multiplier: 1
+Lock-in period: No lock-in period
+STP available: No
+SWP available: No
+
+## Risk and benchmark
+Riskometer: Moderately High
+Benchmark: NIFTY 500 TRI
+Benchmark index: NIFTY 500 Total Return Index
+Portfolio turnover (percent, annual): 29
+
+## Scheme objective
+The scheme seeks to generate capital appreciation / income from a portfolio, predominantly invested in equity & equity related instruments.

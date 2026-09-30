@@ -1,0 +1,23 @@
+# Runtime dependencies.
+# The embedding model is pinned in config.py (EMBED_MODEL), not here - it is a
+# model id, not a package. See PRD.md section 13.
+#
+# Versions below are the ones that actually resolved and were verified on
+# Python 3.13.1 / Windows during Phase 0. Do not loosen them without re-running
+# `pytest -q` and `python -m tests.run_sample_qa`.
+
+streamlit==1.53.0
+chromadb==1.5.0
+sentence-transformers==5.4.0
+transformers==4.57.0
+# Installed here as 2.9.1+cpu. A plain `pip install -r requirements.txt` from
+# PyPI would pull the multi-GB CUDA build instead. On a fresh machine run:
+#   pip install torch==2.9.1 --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt
+torch==2.9.1
+groq==0.19.0
+requests==2.32.5
+beautifulsoup4==4.14.0
+trafilatura==2.0.0
+python-dotenv==1.2.1
+pytest==9.0.1

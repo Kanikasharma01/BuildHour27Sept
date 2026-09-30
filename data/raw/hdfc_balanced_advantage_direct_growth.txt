@@ -1,0 +1,49 @@
+# fetched_at: 2026-09-28T20:18:30+05:30
+# HDFC Balanced Advantage Fund - Direct Growth
+
+## Scheme identity
+Fund name: HDFC Balanced Advantage Fund
+Scheme name: HDFC Balanced Advantage Fund Direct Growth
+Plan type: Direct
+Option type: Growth
+AMC: HDFC
+Fund house: HDFC Mutual Fund
+Category: Dynamic Asset Allocation
+Asset class: Hybrid
+Launch date: 01-Jan-2013
+Allotment date: 2013-01-01
+Fund manager: Srinivas Rao Ravuri
+Registrar and transfer agent: CAMS
+ISIN: INF179K01WA6
+Scheme code: 118968
+Direct plan scheme code: 118968
+Product code: HGFGT
+Open for investment: Yes
+
+## Charges and fees
+Expense ratio: 0.78
+Expense ratio as on: 2026-09-24
+Base expense ratio: 0.64
+Exit load: Exit Load for units in excess of 15% of the investment,1% will be charged for redemption within 1 year.
+Stamp duty: 0.005% (from July 1st, 2020)
+
+## Investment limits
+Minimum lump sum investment: 100
+Minimum SIP investment: 100
+Minimum additional investment: 100
+Minimum withdrawal: 100
+SIP available: Yes
+Lump sum available: Yes
+Purchase multiplier: 1
+Lock-in period: No lock-in period
+STP available: No
+SWP available: No
+
+## Risk and benchmark
+Riskometer: Moderately High
+Benchmark: NIFTY 50 Hybrid Composite Debt 50:50 Index
+Benchmark index: NIFTY 50 Hybrid Composite Debt 50:50 Index
+Portfolio turnover (percent, annual): 27
+
+## Scheme objective
+The Scheme seeks to provide long term capital appreciation / income from a dynamic mix of equity and debt investments.
