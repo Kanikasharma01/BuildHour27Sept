@@ -5,16 +5,20 @@
 # Versions below are the ones that actually resolved and were verified on
 # Python 3.13.1 / Windows during Phase 0. Do not loosen them without re-running
 # `pytest -q` and `python -m tests.run_sample_qa`.
+#
+# The +cpu local version label is deliberate. The plain `torch==2.9.1` on PyPI is
+# the CUDA build, which pulls ~3 GB of nvidia-* wheels and fails on hosts with a
+# small disk - notably Streamlit Community Cloud, which installs this file with
+# no build step of its own. The `+cpu` build only exists on the PyTorch index
+# below, so this pin cannot be satisfied by the CUDA wheel. Do not drop the
+# `+cpu`: the default is silently enormous.
+--extra-index-url https://download.pytorch.org/whl/cpu
 
 streamlit==1.53.0
 chromadb==1.5.0
 sentence-transformers==5.4.0
 transformers==4.57.0
-# Installed here as 2.9.1+cpu. A plain `pip install -r requirements.txt` from
-# PyPI would pull the multi-GB CUDA build instead. On a fresh machine run:
-#   pip install torch==2.9.1 --index-url https://download.pytorch.org/whl/cpu
-#   pip install -r requirements.txt
-torch==2.9.1
+torch==2.9.1+cpu
 groq==0.19.0
 requests==2.32.5
 beautifulsoup4==4.14.0

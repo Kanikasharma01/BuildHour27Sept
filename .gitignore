@@ -17,8 +17,17 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
-# Rebuilt from data/raw/ via `python -m ingest`; vectors are not source.
-chroma_db/
+# chroma_db/ is intentionally NOT ignored. It is still a build artifact - vectors
+# are not source - and it is still rebuilt from data/raw/ via `python -m ingest
+# --cache-only`, so nothing in it is authoritative. But it is committed because
+# Streamlit Community Cloud runs only `streamlit run app.py` with no build step,
+# so a committed collection is the only way the app can find its corpus there.
+# app.py still refuses to start if the collection is missing, so a stale checkout
+# fails loudly instead of silently answering from nothing.
+#
+# If you change data/raw/ or ingest.py, rebuild and commit it in the same change:
+#   python -m ingest --cache-only --force-rebuild
+# Otherwise Cloud keeps serving the previously committed vectors.
 
 # Streamlit
 .streamlit/
