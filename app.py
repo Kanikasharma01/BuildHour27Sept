@@ -131,6 +131,18 @@ _CSS = """
   font-family: 'Inter', sans-serif;
 }
 
+/* Chat input styling for dark theme compatibility */
+[data-testid="stChatInput"] textarea,
+[data-testid="stChatInput"] input {
+  background: #FFFFFF;
+  color: #1E293B;
+  border: 1px solid #CBD5E1;
+}
+
+[data-testid="stChatInput"] label {
+  color: #1E293B;
+}
+
 /* One narrow centred column, the way a messaging app reads.
    Only max-width is set. Padding is left entirely to Streamlit: it reserves bottom space
    for the pinned composer, and overriding it is how a last message ends up sitting behind
@@ -289,6 +301,19 @@ h1 {
 }
 
 a { color: #0066CC; }
+
+/* Fix input field visibility issues */
+[data-testid="stBottom"] {
+  background: #F8FAFC;
+}
+
+[data-testid="stChatInput"] {
+  background: #F8FAFC;
+}
+
+[data-testid="stChatInput"] div {
+  background: #F8FAFC;
+}
 
 /* Quieten the page chrome so the transcript is the page. */
 #MainMenu, footer { visibility: hidden; }
