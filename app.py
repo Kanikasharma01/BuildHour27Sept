@@ -133,14 +133,17 @@ _CSS = """
 
 /* Chat input styling for dark theme compatibility */
 [data-testid="stChatInput"] textarea,
-[data-testid="stChatInput"] input {
-  background: #FFFFFF;
-  color: #1E293B;
-  border: 1px solid #CBD5E1;
+[data-testid="stChatInput"] input,
+[data-testid="stChatInput"] div[contenteditable],
+[data-testid="stChatInput"] div[data-baseweb="textarea"] {
+  background: #FFFFFF !important;
+  color: #1E293B !important;
+  border: 1px solid #CBD5E1 !important;
 }
 
-[data-testid="stChatInput"] label {
-  color: #1E293B;
+[data-testid="stChatInput"] label,
+[data-testid="stChatInput"] * {
+  color: #1E293B !important;
 }
 
 /* One narrow centred column, the way a messaging app reads.
@@ -303,16 +306,12 @@ h1 {
 a { color: #0066CC; }
 
 /* Fix input field visibility issues */
-[data-testid="stBottom"] {
-  background: #F8FAFC;
-}
-
-[data-testid="stChatInput"] {
-  background: #F8FAFC;
-}
-
+[data-testid="stBottom"],
+[data-testid="stBottom"] > div,
+[data-testid="stChatInput"],
+[data-testid="stChatInput"] > div,
 [data-testid="stChatInput"] div {
-  background: #F8FAFC;
+  background: #F8FAFC !important;
 }
 
 /* Quieten the page chrome so the transcript is the page. */
