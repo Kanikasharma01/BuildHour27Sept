@@ -139,7 +139,9 @@ _CSS = """
   background: #FFFFFF !important;
   color: #1E293B !important;
   border: 1px solid #CBD5E1 !important;
-  border-radius: 9999px !important;
+  border-radius: 12px !important;
+  min-height: 3rem !important;
+  padding: 0.5rem 0.75rem !important;
 }
 
 [data-testid="stChatInput"] label,
@@ -313,7 +315,7 @@ a { color: #0066CC; }
 [data-testid="stChatInput"] > div,
 [data-testid="stChatInput"] div {
   background: transparent !important;
-  border-radius: 9999px !important;
+  border-radius: 12px !important;
 }
 
 /* Quieten the page chrome so the transcript is the page. */
