@@ -135,7 +135,9 @@ _CSS = """
 [data-testid="stChatInput"] textarea,
 [data-testid="stChatInput"] input,
 [data-testid="stChatInput"] div[contenteditable],
-[data-testid="stChatInput"] div[data-baseweb="textarea"] {
+[data-testid="stChatInput"] div[data-baseweb="textarea"],
+[data-testid="stChatInput"] div[role="textbox"],
+[data-testid="stChatInput"] > div > div {
   background: #FFFFFF !important;
   color: #1E293B !important;
   border: 1px solid #CBD5E1 !important;
@@ -324,6 +326,7 @@ a { color: #0066CC; }
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
+  outline: none !important;
 }
 
 [data-testid="stChatInput"] div {
