@@ -131,28 +131,6 @@ _CSS = """
   font-family: 'Inter', sans-serif;
 }
 
-/* Chat input styling for dark theme compatibility */
-[data-testid="stChatInput"] textarea,
-[data-testid="stChatInput"] input,
-[data-testid="stChatInput"] div[contenteditable],
-[data-testid="stChatInput"] div[data-baseweb="textarea"],
-[data-testid="stChatInput"] div[role="textbox"],
-[data-testid="stChatInput"] > div > div {
-  background: #FFFFFF !important;
-  color: #1E293B !important;
-  border: 1px solid #CBD5E1 !important;
-  border-radius: 12px !important;
-  min-height: 3rem !important;
-  padding: 0.5rem 0.75rem !important;
-  box-shadow: none !important;
-  outline: none !important;
-}
-
-[data-testid="stChatInput"] label,
-[data-testid="stChatInput"] * {
-  color: #1E293B !important;
-}
-
 /* One narrow centred column, the way a messaging app reads.
    Only max-width is set. Padding is left entirely to Streamlit: it reserves bottom space
    for the pinned composer, and overriding it is how a last message ends up sitting behind
@@ -317,27 +295,6 @@ h1 {
 }
 
 a { color: #0066CC; }
-
-/* Fix input field visibility issues */
-[data-testid="stBottom"],
-[data-testid="stBottom"] > div {
-  background: #F8FAFC !important;
-  position: sticky !important;
-  bottom: 0 !important;
-  z-index: 100 !important;
-}
-
-[data-testid="stChatInput"],
-[data-testid="stChatInput"] > div {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-}
-
-[data-testid="stChatInput"] div {
-  background: transparent !important;
-}
 
 /* Quieten the page chrome so the transcript is the page. */
 #MainMenu, footer { visibility: hidden; }
@@ -668,13 +625,9 @@ def main() -> None:
     _header(opening, disclaimer)
     _render_api_key_notice()
 
-    # Show note once, above chips; never duplicated
-    if opening:
-        st.caption(DISCLAIMER_NOTE)
-        _example_chips()
-    # remove duplicate in non-opening; keep in opening only above chips? Wait: want to show it when not opening? They said "not disappear after user asks a question"
-    # Always show the note below disclaimer
     st.caption(DISCLAIMER_NOTE)
+    if opening:
+        _example_chips()
 
     _render_history()
 
