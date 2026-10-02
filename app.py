@@ -22,6 +22,7 @@ Three rules this file exists to enforce visibly in a demo:
 from __future__ import annotations
 
 import re
+from html import escape
 from pathlib import Path
 
 import streamlit as st
@@ -100,18 +101,36 @@ _REFUSAL_LABELS = {
 _SOURCE_LINE_RE = re.compile(r"^\s*Source:\s*\S+\s*$", re.M)
 _UPDATED_LINE_RE = re.compile(r"^\s*Last updated from sources:.*$", re.M)
 
-# Presentation only. Scoped to Streamlit's own test ids so it cannot restyle a refusal
-# container into something that reads as a normal answer, and written as a `#` comment for
-# the reason given above DISCLAIMER_HEADING: a bare string after a module-level assignment
-# is rendered onto the page as markdown.
+# Presentation only. Scoped to Streamlit's own test ids and to `st-key-*` classes (the
+# `key=` given to a few containers below), so it cannot restyle a refusal container into
+# something that reads as a normal answer. Written as a `#` comment for the reason given
+# above DISCLAIMER_HEADING: a bare string after a module-level assignment is rendered onto
+# the page as markdown.
+#
+# Palette and type follow the Stitch "Institutional Factual Assistant" design: navy
+# #0B2545, cobalt #134074, teal #0D828A, slate text #1E293B on a #F8FAFC canvas; Manrope
+# for the title, Inter for body text, JetBrains Mono for the timestamp. Cards use a 1px
+# hairline border and an 8px radius, with no drop shadows.
 #
 # The stylesheet deliberately does NOT touch the chat composer. An earlier version gave
 # `stChatInput` a 999px radius and stripped the textarea's border and box-shadow, which
 # fought Streamlit's own input styling and left the field's parts visibly overlapping. The
 # composer's internals are laid out by Streamlit and are not ours to restyle; only the
-# page-level frame is. Same reason the message bubbles are left alone.
+# page-level frame is.
 _CSS = """
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@600&family=JetBrains+Mono:wght@400&display=swap');
+
+.stApp {
+  background: #F8FAFC;
+  color: #1E293B;
+}
+.stApp,
+[data-testid="stMarkdownContainer"],
+[data-testid="stCaptionContainer"] {
+  font-family: 'Inter', sans-serif;
+}
+
 /* One narrow centred column, the way a messaging app reads.
    Only max-width is set. Padding is left entirely to Streamlit: it reserves bottom space
    for the pinned composer, and overriding it is how a last message ends up sitting behind
@@ -120,31 +139,159 @@ _CSS = """
   max-width: 46rem;
 }
 
-/* A little air between turns without turning the page into a stack of cards. */
+h1 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+  color: #0B2545;
+}
+
+/* The FR-20 line under the title, in the teal "verified" accent. */
+.st-key-tagline [data-testid="stMarkdownContainer"] p {
+  color: #0D828A;
+  font-size: 0.9rem;
+  margin-top: -0.4rem;
+}
+
+/* Turns. The user's message is a solid navy bubble; the assistant's is a white card with a
+   hairline border. Only colour, radius and padding are set; Streamlit still owns the
+   layout and the avatars. */
 [data-testid="stChatMessage"] {
   gap: 0.7rem;
   padding: 0.3rem 0;
 }
+[data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarUser"]) {
+  background: #0B2545;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.9rem;
+}
+[data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarUser"])
+  [data-testid="stChatMessageContent"] * {
+  color: #FFFFFF;
+}
+[data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarAssistant"]) {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.9rem;
+}
 
-/* Starter chips: full-width rounded rows, left aligned, so they read as suggestions.
-   A stadium radius was wrong here -- the example questions are long sentences, and a
-   999px curve on a full-width button squeezes the text into the ends. */
+/* Starter chips: full-width rows on the recessed #EDF2F7 surface, cobalt text. */
 [data-testid="stButton"] button {
-  border-radius: 0.6rem;
+  background: #EDF2F7;
+  color: #134074;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
   text-align: left;
+  justify-content: flex-start;
   white-space: normal;
   height: auto;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-[data-testid="stButton"] button:hover {
-  border-color: #94a3b8;
+[data-testid="stButton"] button p,
+[data-testid="stButton"] button [data-testid="stMarkdownContainer"] {
+  text-align: left;
+  justify-content: flex-start;
+  width: 100%;
+  color: inherit;
 }
+[data-testid="stButton"] button:hover {
+  background: #E2E8F0;
+  border-color: #CBD5E1;
+  color: #0B2545;
+}
+
+/* "New chat" is the secondary action: white, outlined, navy text. Declared after the chip
+   rule so it wins at equal specificity. */
+.st-key-new_chat button {
+  background: #FFFFFF;
+  color: #0B2545;
+  border: 1px solid #CBD5E1;
+  text-align: center;
+}
+.st-key-new_chat button:hover {
+  background: #F1F5F9;
+  border-color: #CBD5E1;
+}
+.st-key-new_chat button,
+.st-key-new_chat button p {
+  justify-content: center;
+  text-align: center;
+}
+
+/* Expanders (full disclaimer, sources) read as recessed insets. The summary row is given
+   its own transparent background and navy text, so it cannot inherit a dark theme's
+   colours and end up unreadable on the light inset. */
+[data-testid="stExpander"] details {
+  background: #EDF2F7;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.5rem;
+}
+[data-testid="stExpander"] summary {
+  background: transparent;
+  color: #0B2545;
+}
+[data-testid="stExpander"] summary * {
+  color: #0B2545;
+}
+
+/* Text colours, stated outright. This page is a light design, so body text and captions are
+   pinned to dark slate rather than inherited: on a browser or Streamlit theme that is dark,
+   inherited text is near-white and disappears against the white cards. */
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] li {
+  color: #1E293B;
+}
+[data-testid="stCaptionContainer"],
+[data-testid="stCaptionContainer"] * {
+  color: #64748B;
+}
+[data-testid="stHeader"] {
+  background: #F8FAFC;
+}
+[data-testid="stBottom"] > div {
+  background: #F8FAFC;
+}
+
+/* Citation as a small pill, and the timestamp in the monospace face. */
+.cite-pill {
+  display: inline-block;
+  background: #F1F5F9;
+  border-radius: 9999px;
+  padding: 0.1rem 0.75rem;
+  font-size: 0.82rem;
+}
+.cite-pill a {
+  color: #134074;
+  text-decoration: none;
+}
+.updated {
+  font-size: 0.8rem;
+  color: #64748B;
+  margin-top: 0.35rem;
+}
+.updated span {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+}
+
+/* A guard refusal: red-tinted card with a red label, so it is never mistaken for an
+   answer. */
+.st-key-refusal {
+  background: #FEF2F2;
+  border-color: #FECACA;
+  border-radius: 0.5rem;
+}
+.st-key-refusal strong {
+  color: #B91C1C;
+}
+
+a { color: #0066CC; }
 
 /* Quieten the page chrome so the transcript is the page. */
 #MainMenu, footer { visibility: hidden; }
-
-h1 { font-size: 1.5rem; letter-spacing: -0.01em; }
 </style>
 """
 
@@ -161,21 +308,18 @@ def _resources():
 
 
 def _read_disclaimer() -> str:
-    """The disclaimer body from DISCLAIMER.md, minus its heading and its placement note."""
-    if not DISCLAIMER_PATH.exists():
-        return (
-            "Facts-only. No investment advice. This assistant answers factual questions "
-            "about five HDFC AMC schemes from public source pages only."
-        )
-    text = DISCLAIMER_PATH.read_text(encoding="utf-8")
-    body = text.split("## Where this appears in the UI", 1)[0]
-    return " ".join(
-        line
-        for line in body.splitlines()
-        if line.strip()
-        and not line.startswith("#")
-        and line.strip() != DISCLAIMER_HEADING
-    ).strip()
+    """The disclaimer body with custom first line."""
+    sources_list = "\n".join(f"- [{spec.scheme_name}]({spec.url})" for spec in config.SOURCE_URLS)
+    text = (
+        "This assistant answers factual questions about selected HDFC AMC mutual fund schemes "
+        "using only the public source pages listed below:\n\n"
+        f"{sources_list}\n\n"
+        "It does not recommend, rate, or compare schemes, and it does not compute or report returns. "
+        "Fund facts such as fees, exit loads, and minimum investments change over time — always verify on "
+        "the official factsheet and consult your financial adviser before investing. Do not share PAN, "
+        "Aadhaar, account numbers, OTPs, or any personal information here."
+    )
+    return text.strip()
 
 
 def _body_only(answer_text: str) -> str:
@@ -199,14 +343,28 @@ def _render_sources(hits) -> None:
 
 
 def _render_answer(answer) -> None:
-    """A grounded answer, with its single citation and the code-appended timestamp."""
+    """A grounded answer, with its single citation and the code-appended timestamp.
+
+    The citation and the timestamp are drawn as a pill and a monospace line (see `_CSS`).
+    Both values are escaped before they go into the HTML, so a title or URL from the corpus
+    cannot inject markup.
+    """
     if answer.notice:
         st.warning(answer.notice, icon="⚠️")
 
     if answer.source_url and answer.source_title:
         st.markdown(_body_only(answer.text))
-        st.markdown(f"[{answer.source_title}]({answer.source_url})")
-        st.caption(f"Last updated from sources: {answer.last_updated}")
+        st.markdown(
+            f'<span class="cite-pill"><a href="{escape(str(answer.source_url), quote=True)}" '
+            f'target="_blank" rel="noopener noreferrer">{escape(str(answer.source_title))}'
+            f"</a></span>",
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            f'<div class="updated">Last updated from sources: '
+            f"<span>{escape(str(answer.last_updated))}</span></div>",
+            unsafe_allow_html=True,
+        )
     else:
         st.markdown(answer.text)
 
@@ -215,8 +373,12 @@ def _render_answer(answer) -> None:
 
 
 def _render_refusal(decision) -> None:
-    """A guard outcome, visibly distinct from a normal answer and with no echo of input."""
-    with st.container(border=True):
+    """A guard outcome, visibly distinct from a normal answer and with no echo of input.
+
+    The `key` only gives the container a stable CSS hook (`st-key-refusal`) for the red
+    styling. It is rendered at most once per run, so the key cannot collide.
+    """
+    with st.container(border=True, key="refusal"):
         st.markdown(f"**{_REFUSAL_LABELS.get(decision.action, 'Not answered')}**")
         st.markdown(decision.message or "")
     st.caption("The guard stage stopped this before retrieval or the language model.")
@@ -305,10 +467,7 @@ def _inject_css() -> None:
     """Apply the chat-layout stylesheet.
 
     Layout and chrome only. Nothing here changes what is rendered, what is stored, or what
-    a guard decided, so the CSS cannot make the app disagree with `answer.py`. The
-    `st.chat_message` bubbles are left alone on purpose -- Streamlit already draws the user
-    side as a bubble opposite the avatar, and overriding it is how a chat UI ends up looking
-    like a stack of identical grey boxes.
+    a guard decided, so the CSS cannot make the app disagree with `answer.py`.
     """
     st.markdown(_CSS, unsafe_allow_html=True)
 
@@ -351,8 +510,10 @@ def _header(opening: bool, disclaimer: str) -> None:
     """
     left, right = st.columns([5, 1])
     with left:
-        st.title("HDFC Mutual Funds")
-        st.markdown(DISCLAIMER_HEADING)
+        st.title("📊 HDFC Mutual Funds")
+        # The container's key is only a CSS hook (`st-key-tagline`) for the teal colour.
+        with st.container(key="tagline"):
+            st.markdown("**Facts-only. No investment advice.**")
     with right:
         # Spacer so the button sits on the title's baseline rather than above the fold.
         st.write("")
@@ -368,24 +529,12 @@ def _header(opening: bool, disclaimer: str) -> None:
                 on_click=_clear_transcript,
                 help="Clear the transcript and start over",
             )
-    with st.expander("Full disclaimer", expanded=opening):
+    with st.expander("*Full Disclaimer*", expanded=False):
         st.caption(disclaimer)
 
 
 def _greeting() -> None:
-    """The opening assistant message: what this is, and what it can see.
-
-    Rendered as a real assistant turn rather than as loose page text, so the first thing on
-    screen has the same shape as everything that follows it. Shown only while the transcript
-    is empty.
-    """
-    with st.chat_message("assistant"):
-        st.markdown(
-            "Ask me a factual question about the five HDFC funds below. I answer from "
-            "public scheme pages only, and I will tell you when something is not in them."
-        )
-        st.caption(DISCLAIMER_NOTE)
-        st.caption(_scope_line())
+    """No-op. Previously rendered an empty assistant message."""
 
 
 def _set_pending(question: str) -> None:
@@ -470,9 +619,13 @@ def main() -> None:
     _header(opening, disclaimer)
     _render_api_key_notice()
 
+    # Show note once, above chips; never duplicated
     if opening:
+        st.caption(DISCLAIMER_NOTE)
         _example_chips()
-        _greeting()
+    # remove duplicate in non-opening; keep in opening only above chips? Wait: want to show it when not opening? They said "not disappear after user asks a question"
+    # Always show the note below disclaimer
+    st.caption(DISCLAIMER_NOTE)
 
     _render_history()
 
