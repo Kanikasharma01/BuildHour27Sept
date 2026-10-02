@@ -257,9 +257,6 @@ h1 {
   padding: 0 !important;
   display: none !important;
 }
-[data-testid="stBottom"] > div {
-  background: #F8FAFC;
-}
 
 /* Citation as a small pill, and the timestamp in the monospace face. */
 .cite-pill {
