@@ -142,6 +142,8 @@ _CSS = """
   border-radius: 12px !important;
   min-height: 3rem !important;
   padding: 0.5rem 0.75rem !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 [data-testid="stChatInput"] label,
@@ -310,12 +312,22 @@ a { color: #0066CC; }
 
 /* Fix input field visibility issues */
 [data-testid="stBottom"],
-[data-testid="stBottom"] > div,
+[data-testid="stBottom"] > div {
+  background: #F8FAFC !important;
+  position: sticky !important;
+  bottom: 0 !important;
+  z-index: 100 !important;
+}
+
 [data-testid="stChatInput"],
-[data-testid="stChatInput"] > div,
+[data-testid="stChatInput"] > div {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 [data-testid="stChatInput"] div {
   background: transparent !important;
-  border-radius: 12px !important;
 }
 
 /* Quieten the page chrome so the transcript is the page. */
