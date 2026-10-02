@@ -167,6 +167,8 @@ h1 {
   font-size: 1.5rem;
   letter-spacing: -0.01em;
   color: #0B2545;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 /* The FR-20 line under the title, in the teal "verified" accent. */
@@ -272,6 +274,10 @@ h1 {
 }
 [data-testid="stHeader"] {
   background: #F8FAFC;
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  display: none !important;
 }
 [data-testid="stBottom"] > div {
   background: #F8FAFC;
@@ -553,7 +559,7 @@ def _header(opening: bool, disclaimer: str) -> None:
     """
     left, right = st.columns([5, 1])
     with left:
-        st.title("📊 HDFC Mutual Funds")
+        st.markdown("# 📊 HDFC Mutual Funds")
         # The container's key is only a CSS hook (`st-key-tagline`) for the teal colour.
         with st.container(key="tagline"):
             st.markdown("**Facts-only. No investment advice.**")
